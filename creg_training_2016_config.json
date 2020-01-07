@@ -1,0 +1,63 @@
+{
+    "y_mean": 0.9908722639083862,
+    "y_std": 0.28862622380256653,
+    "Trainable_params": 2833617,
+    "Nontrainable_params": 8014,
+    "model_params": {
+        "activations": [
+            "lrelu",
+            "lrelu",
+            "lrelu",
+            "lrelu",
+            "lrelu",
+            "lrelu"
+        ],
+        "batch_norm": true,
+        "const_output_biases": null,
+        "do_bn0": true,
+        "dropout": 0.1,
+        "input_shape": [
+            39
+        ],
+        "layers": [
+            1024,
+            1024,
+            1024,
+            512,
+            256,
+            128
+        ],
+        "loss": "HybridLoss",
+        "loss_params": {},
+        "monitor_dir": "./Z14_CReg16_Epoch100_11615293",
+        "name": "ffwd",
+        "non_neg": false,
+        "optimizer": "Adam",
+        "optimizer_params": {
+            "lr": 0.001
+        },
+        "output_shape": null,
+        "save_best_only": true,
+        "valid_frac": null
+    },
+    "fit_kwargs": {
+        "epochs": 100,
+        "steps_per_epoch": 51404,
+        "verbose": 2
+    },
+    "options": {
+        "inp_dir": "../breg_nano16/TT/",
+        "out_dir": "./Z14_CReg16_Epoch100_11615293",
+        "inp_files": "all",
+        "inp_file_valid": "TT_PerJet_1.root.hd5",
+        "features": "Jet_pt,Jet_eta,rho,Jet_mt,Jet_leadTrackPt,Jet_leptonPtRel,Jet_leptonDeltaR,Jet_neHEF,Jet_neEmEF,Jet_vtxPt,Jet_vtxMass,Jet_vtx3dL,Jet_vtxNtrk,Jet_vtx3deL,Jet_numDaughters_pt03,Jet_chEmEF,Jet_chHEF,Jet_ptd,Jet_mass,Jet_energyRing_dR0_em_Jet_rawEnergy,Jet_energyRing_dR1_em_Jet_rawEnergy,Jet_energyRing_dR2_em_Jet_rawEnergy,Jet_energyRing_dR3_em_Jet_rawEnergy,Jet_energyRing_dR4_em_Jet_rawEnergy,Jet_energyRing_dR0_neut_Jet_rawEnergy,Jet_energyRing_dR1_neut_Jet_rawEnergy,Jet_energyRing_dR2_neut_Jet_rawEnergy,Jet_energyRing_dR3_neut_Jet_rawEnergy,Jet_energyRing_dR4_neut_Jet_rawEnergy,Jet_energyRing_dR0_ch_Jet_rawEnergy,Jet_energyRing_dR1_ch_Jet_rawEnergy,Jet_energyRing_dR2_ch_Jet_rawEnergy,Jet_energyRing_dR3_ch_Jet_rawEnergy,Jet_energyRing_dR4_ch_Jet_rawEnergy,Jet_energyRing_dR0_mu_Jet_rawEnergy,Jet_energyRing_dR1_mu_Jet_rawEnergy,Jet_energyRing_dR2_mu_Jet_rawEnergy,Jet_energyRing_dR3_mu_Jet_rawEnergy,Jet_energyRing_dR4_mu_Jet_rawEnergy",
+        "normalize_target": true,
+        "loss": "HybridLoss",
+        "batch_size": 1024,
+        "epochs": 100,
+        "hparams": null,
+        "seed": 98543,
+        "x_val": false,
+        "nkfolds": 5
+    }
+}
